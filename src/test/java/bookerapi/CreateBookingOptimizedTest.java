@@ -8,7 +8,7 @@ import constants.Status_Code;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class CreteBookingTest extends TestBase {
+public class CreateBookingOptimizedTest extends TestBase {
 
 	@BeforeClass
 	public void generateToken() {

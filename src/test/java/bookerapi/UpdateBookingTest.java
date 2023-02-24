@@ -16,7 +16,7 @@ public class UpdateBookingTest extends TestBase {
 		init();
 	}
 	
-	@Test (priority = 5, enabled = false)
+	@Test
 	public void updateBookingIdTest() {
 		payload.setFirstname("Kriday");
 		Response res = RestAssured.given()

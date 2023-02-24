@@ -15,7 +15,7 @@ public class DeleteBookingTest extends TestBase {
 		init();
 	}
 	
-	@Test (priority = 7)
+	@Test
 	public void deleteBookingIdTest() {
 		payload.setFirstname("Shashank");
 		payload.setLastname("Garad");

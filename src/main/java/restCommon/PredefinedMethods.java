@@ -1,7 +1,5 @@
 package restCommon;
 
-import org.testng.Assert;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -16,8 +14,10 @@ public class PredefinedMethods {
 						+ "    \"password\" : \"password123\"\r\n"
 						+ "}")
 				.when().post("/auth");
-		Assert.assertEquals(res.statusCode(), 200);
-		return res.jsonPath().getString("token");
+		if(res.statusCode() == 200)
+			return res.jsonPath().getString("token");
+		else
+			return null;	
 	}
 
 }

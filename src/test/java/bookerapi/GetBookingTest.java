@@ -16,7 +16,7 @@ public class GetBookingTest extends TestBase {
 		init();
 	}
 
-	@Test (priority = 2, enabled = false)
+	@Test
 	public void getAllBookingTest() {
 		Response res = RestAssured.given()
 				.headers("Accept", "application/json")
@@ -27,7 +27,7 @@ public class GetBookingTest extends TestBase {
 		
 	}
 
-	@Test (priority = 3)
+	@Test
 	public void getBookingIdTest() {
 		Response res = RestAssured.given()
 				.headers("Accept", "application/json")

@@ -16,7 +16,7 @@ public class PartialUpdateBookingTest extends TestBase {
 		init();
 	}
 	
-	@Test (priority = 6, enabled = false)
+	@Test
 	public void partialUpdateBookingIdTest() {
 		payload.setFirstname("Shashank");
 		payload.setLastname("Garad");
